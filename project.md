@@ -40,7 +40,7 @@ Example (a real one):
 
 ### Phase 1 — Plan & design
 
-1. [ ] Research the landscape of existing pizza-review sites → [research.md](research.md)
+1. [x] Research the landscape of existing pizza-review sites → [research.md](research.md)
 2. [ ] Choose a name from a large set of proposals → [names.md](names.md) — Konrad & Natalia pick
 
 ### Phase 2 — Build the whole website
@@ -57,4 +57,4 @@ Example (a real one):
 
 ## Stack (planned)
 
-Hugo + a minimal theme (shortlist in [research.md](research.md)), deployed to GitHub Pages via Actions, custom domain on top.
+Hugo + **hugo-bearblog** (winner — ~6 KB pages, zero JS; runner-up: Etch; shortlist in [research.md](research.md)), deployed to GitHub Pages via the official Actions flow, custom domain on top. Photos as page bundles with a resize render-hook.
