@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Margherita Papers — The Paper</title>
+<style>
+  :root{
+    --bg:#f5efe2; --ink:#211d17; --muted:#6d6456; --accent:#7b2a24; --line:#c9bfa9;
+    --crust:#e6b45f; --sauce:#c0402f; --cheese:#f4ead2; --char:#6a3b23; --basil:#4a6b41;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#1c1913; --ink:#e9e1cf; --muted:#a79c86; --accent:#d98a72; --line:#40382a; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    line-height:1.62;}
+  .wrap{max-width:39rem;margin:0 auto;padding:2.4rem 1.3rem 4rem}
+  /* Nameplate */
+  .plate{text-align:center;border-top:2px solid var(--ink);padding-top:1.1rem;margin-top:.6rem}
+  .plate h1{font-size:clamp(2.3rem,7vw,3.4rem);line-height:1;margin:.2rem 0 .35rem;font-weight:700;letter-spacing:-.01em}
+  .plate .tag{font-style:italic;color:var(--muted);font-size:1rem}
+  .rule2{border:0;border-top:1px solid var(--ink);box-shadow:0 3px 0 -2px var(--ink);margin:1rem 0 .5rem}
+  .dateline{display:flex;justify-content:space-between;font-size:.72rem;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:1.4rem}
+  /* Article */
+  .kicker{text-align:center;margin-top:2rem;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+  .title{text-align:center;font-size:clamp(2rem,6vw,2.7rem);line-height:1.05;margin:.35rem 0 .4rem;font-weight:700}
+  .byline{text-align:center;font-style:italic;color:var(--muted);margin-bottom:1.8rem}
+  figure{margin:2rem 0;text-align:center}
+  .pie{width:min(15rem,60%);height:auto;filter:drop-shadow(0 6px 14px rgba(60,40,20,.22))}
+  figcaption{font-style:italic;color:var(--muted);font-size:.9rem;margin-top:.7rem}
+  .lede{margin-top:1.4rem}
+  .lede::first-letter{float:left;font-size:3.5rem;line-height:.78;padding:.28rem .5rem 0 0;color:var(--accent);font-weight:700}
+  p.body{text-align:justify;hyphens:auto;margin:0 0 1.15rem}
+  /* Particulars */
+  .particulars{margin:2.4rem 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:1.3rem 0}
+  .particulars h2{text-align:center;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);
+    font-weight:400;margin:0 0 1rem}
+  dl{margin:0}
+  .row{display:grid;grid-template-columns:8.5rem 1fr;gap:.4rem 1rem;padding:.42rem 0;border-bottom:1px solid var(--line)}
+  .row:last-child{border-bottom:0}
+  dt{font-variant:small-caps;letter-spacing:.03em;color:var(--accent);font-size:1.02rem}
+  dd{margin:0;font-style:italic}
+  .end{text-align:center;color:var(--accent);margin:2.6rem 0 1.4rem;font-size:1.3rem}
+  .next{text-align:center;font-variant:small-caps;letter-spacing:.06em}
+  .next a{color:var(--ink)}
+  @media(max-width:30rem){.row{grid-template-columns:1fr}dt{margin-bottom:-.2rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="plate">
+    <h1>Margherita Papers</h1>
+    <div class="tag">Konrad &amp; Natalia review pizza, slowly.</div>
+    <hr class="rule2">
+    <div class="dateline"><span>Vol. I · No. 1</span><span>Est. 2026</span><span>Naples</span></div>
+  </header>
+
+  <article>
+    <div class="kicker">Naples, Italy</div>
+    <h1 class="title">Da Michele</h1>
+    <div class="byline">by Konrad &amp; Natalia · March 2026</div>
+
+    <figure>
+      <svg class="pie" viewBox="0 0 120 120" role="img" aria-label="A margherita pizza">
+        <circle cx="60" cy="60" r="56" fill="var(--crust)"/>
+        <circle cx="60" cy="60" r="45" fill="var(--sauce)"/>
+        <g fill="var(--char)"><circle cx="60" cy="8" r="4"/><circle cx="95" cy="22" r="3.4"/><circle cx="112" cy="58" r="4"/><circle cx="95" cy="96" r="3.2"/><circle cx="58" cy="112" r="4"/><circle cx="22" cy="96" r="3.4"/><circle cx="8" cy="60" r="4"/><circle cx="24" cy="23" r="3.4"/></g>
+        <g fill="var(--cheese)"><circle cx="45" cy="45" r="9"/><circle cx="74" cy="52" r="8"/><circle cx="55" cy="74" r="9"/><circle cx="80" cy="78" r="6"/><circle cx="40" cy="66" r="6"/></g>
+        <g fill="var(--basil)"><ellipse cx="66" cy="40" rx="4" ry="6.5" transform="rotate(20 66 40)"/><ellipse cx="42" cy="56" rx="3.6" ry="6" transform="rotate(-25 42 56)"/><ellipse cx="70" cy="66" rx="3.6" ry="6" transform="rotate(40 70 66)"/></g>
+      </svg>
+      <figcaption>Da Michele's margherita, folded, on paper. <span style="opacity:.6">[ your photo here ]</span></figcaption>
+    </figure>
+
+    <p class="body lede">We queued for fifty minutes in a rain that never quite decided to fall. Natalia had formed opinions about the queue long before we reached the door — about the couple ahead of us splitting one margherita "to stay light," about the man photographing his pizza from a chair he'd dragged into the street. By the time we sat down at a shared marble table we were starving, and starving is the best sauce, which rather complicates the reviewing.</p>
+
+    <section class="particulars">
+      <h2>The Particulars</h2>
+      <dl>
+        <div class="row"><dt>Style</dt><dd>Neapolitan.</dd></div>
+        <div class="row"><dt>Base</dt><dd>Overall tasty, dense but not too heavy, very crispy, proper level.</dd></div>
+        <div class="row"><dt>Crown</dt><dd>Appropriate Neapolitan.</dd></div>
+        <div class="row"><dt>Cheese</dt><dd>Good, creamy, well-distributed.</dd></div>
+        <div class="row"><dt>Tomatoes</dt><dd>Very good, pungent, sweet and umami.</dd></div>
+        <div class="row"><dt>Olive oil</dt><dd>Tasted like nothing — both the table oil and the one on the pizza.</dd></div>
+        <div class="row"><dt>Leoparding &amp; char</dt><dd>There, but shy; more spot than smoke.</dd></div>
+        <div class="row"><dt>Alveolation</dt><dd>Open and uneven, in the good way.</dd></div>
+        <div class="row"><dt>Beauty</dt><dd>Normal.</dd></div>
+      </dl>
+    </section>
+
+    <p class="body">It came fast, folded, on a paper plate, and it was very good in the plain, unbothered way the great ones are. The base did all the work. The oil did nothing at all — we kept adding it, hoping, the way you do. We ate quickly, said little, and walked out into the same undecided rain, already arguing gently about where it ranked.</p>
+
+    <div class="end">❧</div>
+    <div class="next"><a href="#">No. 2 — a Tuesday in Warsaw &nbsp;→</a></div>
+  </article>
+</div>
+</body>
+</html>

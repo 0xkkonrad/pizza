@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Margherita Papers — Tasting Card</title>
+<style>
+  :root{
+    --bg:#f4f4f1; --ink:#17171b; --muted:#7a7a80; --accent:#d3341f; --line:#dcdcd6; --card:#fff;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#131315; --ink:#e6e6e8; --muted:#8c8c92; --accent:#f2634e; --line:#2b2b30; --card:#1a1a1d; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;line-height:1.6;
+    -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:43rem;margin:0 auto;padding:1.8rem 1.2rem 4rem}
+  .top{display:flex;justify-content:space-between;align-items:baseline;
+    border-bottom:1.5px solid var(--ink);padding-bottom:.7rem;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase}
+  .top .n{color:var(--accent);font-weight:700}
+  .lead{margin:2.4rem 0 2rem}
+  .lead .idx{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+  .lead h1{font-size:clamp(2rem,6vw,2.9rem);line-height:1;margin:.3rem 0 .5rem;letter-spacing:-.02em;font-weight:800}
+  .chips{display:flex;flex-wrap:wrap;gap:.4rem;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase}
+  .chip{border:1px solid var(--line);border-radius:99px;padding:.2rem .6rem;color:var(--muted)}
+  /* Spec card */
+  .card{background:var(--card);border:1.5px solid var(--ink);border-radius:4px;overflow:hidden;margin:0 0 2rem}
+  .card .hd{display:flex;justify-content:space-between;align-items:center;background:var(--ink);color:var(--bg);
+    padding:.55rem .9rem;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase}
+  .spec{display:grid;grid-template-columns:9.5rem 1fr}
+  .spec dt{padding:.6rem .9rem;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+    border-bottom:1px solid var(--line);border-right:1px solid var(--line);display:flex;align-items:center}
+  .spec dd{margin:0;padding:.6rem .9rem;border-bottom:1px solid var(--line);
+    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-size:.9rem}
+  .spec .last dt,.spec .last dd{border-bottom:0}
+  .spec .hi dd{color:var(--accent);font-weight:600}
+  figure{margin:0 0 2rem}
+  .ph{aspect-ratio:16/10;border:1.5px solid var(--ink);border-radius:4px;background:
+    repeating-linear-gradient(45deg,transparent,transparent 11px,rgba(211,52,31,.06) 11px,rgba(211,52,31,.06) 12px);
+    display:flex;align-items:center;justify-content:center;color:var(--muted)}
+  .ph svg{width:5rem;height:5rem;color:var(--accent)}
+  figcaption{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:.5rem}
+  .notes{max-width:34rem}
+  .notes h2{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:0 0 .6rem}
+  .notes p{margin:0 0 1rem;font-size:.98rem}
+  @media(max-width:30rem){.spec{grid-template-columns:1fr}.spec dt{border-right:0;padding-bottom:0;border-bottom:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><span class="n">Margherita Papers</span><span>Tasting № 01</span></div>
+
+  <div class="lead">
+    <div class="idx">Report № 01 · Naples</div>
+    <h1>Da Michele</h1>
+    <div class="chips"><span class="chip">Neapolitan</span><span class="chip">Via Cesare Sersale</span><span class="chip">Mar 2026</span></div>
+  </div>
+
+  <div class="card">
+    <div class="hd"><span>Tasting Notes</span><span>K &amp; N</span></div>
+    <dl class="spec">
+      <dt>Style</dt><dd>Neapolitan</dd>
+      <dt>Base</dt><dd>tasty · dense, not heavy · very crispy · proper level</dd>
+      <dt>Crown</dt><dd>appropriate Neapolitan</dd>
+      <dt>Cheese</dt><dd>good · creamy · well-distributed</dd>
+      <dt>Tomatoes</dt><dd>very good · pungent · sweet &amp; umami</dd>
+      <dt>Olive oil</dt><dd>tasted like nothing (table + on-pizza)</dd>
+      <dt>Leoparding &amp; char</dt><dd>present but shy · more spot than smoke</dd>
+      <dt>Alveolation</dt><dd>open, uneven — the good way</dd>
+      <div class="hi last" style="display:contents"><dt>Beauty</dt><dd>normal</dd></div>
+    </dl>
+  </div>
+
+  <figure>
+    <div class="ph">
+      <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="4" aria-label="pizza">
+        <circle cx="60" cy="60" r="52"/><circle cx="60" cy="60" r="41"/>
+        <g fill="currentColor" stroke="none"><circle cx="48" cy="50" r="4.5"/><circle cx="73" cy="54" r="3.6"/><circle cx="56" cy="73" r="4.5"/><circle cx="79" cy="75" r="3.2"/><circle cx="42" cy="66" r="3"/></g>
+      </svg>
+    </div>
+    <figcaption>Plate 1 — the margherita, folded &nbsp;·&nbsp; [ photo ]</figcaption>
+  </figure>
+
+  <div class="notes">
+    <h2>Field Notes</h2>
+    <p>We queued for fifty minutes in a rain that never quite decided to fall. Natalia had formed opinions about the queue long before we reached the door — about the couple ahead of us splitting one margherita "to stay light," about the man photographing his pizza from a chair he'd dragged into the street. By the time we sat down we were starving, and starving is the best sauce, which complicates the reviewing.</p>
+    <p>It came fast, folded, on a paper plate, and it was very good in the plain, unbothered way the great ones are. The base did all the work. The oil did nothing at all — we kept adding it, hoping, the way you do. We walked out into the same undecided rain, already arguing gently about where it ranked.</p>
+  </div>
+</div>
+</body>
+</html>

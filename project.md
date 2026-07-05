@@ -1,6 +1,6 @@
-# 🍕 pizza
+# 🍕 Margherita Papers
 
-Konrad & Natalia review pizza. A tiny Hugo site — lifestyle / memoir-style blogging, strictly non-commercial, updated less than once a month.
+Konrad & Natalia review pizza. A tiny Hugo site — lifestyle / memoir-style blogging, strictly non-commercial, updated less than once a month. Name chosen 2026-07-05; domain **MargheritaPapers.com** (buy once design is locked).
 
 Repo: https://github.com/0xkkonrad/pizza · Local: `/workspaces/sandbox/pizza`
 
@@ -41,7 +41,8 @@ Example (a real one):
 ### Phase 1 — Plan & design
 
 1. [x] Research the landscape of existing pizza-review sites → [research.md](research.md)
-2. [ ] Choose a name from a large set of proposals → [names.md](names.md) — Konrad & Natalia pick
+2. [x] Choose a name from a large set of proposals → [names.md](names.md) — **chosen: Margherita Papers** (MargheritaPapers.com)
+3. [ ] Choose a design direction → [design/](design/) — five mockups presented, Konrad & Natalia pick
 
 ### Phase 2 — Build the whole website
 

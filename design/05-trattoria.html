@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Margherita Papers — Trattoria</title>
+<style>
+  :root{
+    --bg:#fbf1dc; --paper:#fffaf0; --ink:#33261b; --muted:#8a745a; --tomato:#c23b2b; --basil:#3f6b48; --line:#e4d3b3;
+    --crust:#e6b45f; --sauce:#c0402f; --cheese:#f7edd6; --char:#6a3b23;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#1a140d; --paper:#221a12; --ink:#ecdcc4; --muted:#a8927a; --tomato:#e26150; --basil:#7aa583; --line:#3a2c1d; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;line-height:1.6;}
+  .card{max-width:40rem;margin:1.6rem auto;background:var(--paper);
+    border:2px solid var(--tomato);border-radius:3px;box-shadow:0 0 0 5px var(--paper),0 0 0 6px var(--line);
+    padding:2.2rem 1.8rem 2.6rem}
+  /* Masthead */
+  .mast{text-align:center}
+  .mast .pie{width:3.6rem;height:3.6rem;display:block;margin:0 auto .5rem}
+  .mast h1{font-size:clamp(2rem,6.5vw,2.9rem);line-height:1;margin:0;letter-spacing:.01em;font-weight:800}
+  .mast .tag{font-style:italic;color:var(--muted);margin-top:.35rem}
+  .tricolore{height:3px;margin:1.2rem 0 0;background:linear-gradient(90deg,var(--basil) 0 33%,var(--paper) 33% 66%,var(--tomato) 66% 100%)}
+  /* Article */
+  .kick{text-align:center;color:var(--tomato);font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;margin-top:1.8rem}
+  .ptitle{text-align:center;font-size:clamp(1.8rem,5.5vw,2.4rem);margin:.3rem 0 .3rem;font-weight:700}
+  .pby{text-align:center;font-style:italic;color:var(--muted);margin-bottom:1.6rem}
+  figure{margin:1.6rem 0;text-align:center}
+  .plate{width:min(13rem,55%);height:auto;filter:drop-shadow(0 6px 14px rgba(80,40,20,.25))}
+  figcaption{font-style:italic;color:var(--muted);font-size:.88rem;margin-top:.6rem}
+  .menu{margin:1.8rem 0;padding:1.3rem 1.2rem;border-top:1px double var(--tomato);border-bottom:1px double var(--tomato)}
+  .menu h2{text-align:center;font-size:.76rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);font-weight:400;margin:0 0 1rem}
+  .item{display:flex;gap:.6rem;align-items:baseline;padding:.34rem 0}
+  .item .lab{color:var(--tomato);font-variant:small-caps;letter-spacing:.03em;white-space:nowrap;font-size:1.05rem}
+  .item .dots{flex:1;border-bottom:1.5px dotted var(--line);transform:translateY(-.25rem)}
+  .item .val{text-align:right}
+  p.body{margin:0 0 1.1rem}
+  p.body::first-letter{}
+  .lede::first-letter{float:left;font-family:Georgia,serif;font-size:3.1rem;line-height:.8;padding:.2rem .45rem 0 0;color:var(--tomato);font-weight:700}
+  .end{text-align:center;color:var(--tomato);margin:2rem 0 .6rem;letter-spacing:.3em}
+  .next{text-align:center;font-variant:small-caps}
+  .next a{color:var(--ink)}
+  @media(max-width:30rem){.item{flex-wrap:wrap}.item .dots{display:none}.item .val{text-align:left;width:100%;color:var(--muted)}}
+</style>
+</head>
+<body>
+  <div class="card">
+    <header class="mast">
+      <svg class="pie" viewBox="0 0 120 120" role="img" aria-label="pizza">
+        <circle cx="60" cy="60" r="56" fill="var(--crust)"/><circle cx="60" cy="60" r="45" fill="var(--sauce)"/>
+        <g fill="var(--char)"><circle cx="60" cy="8" r="4"/><circle cx="98" cy="30" r="3.2"/><circle cx="112" cy="60" r="4"/><circle cx="90" cy="98" r="3"/><circle cx="58" cy="112" r="4"/><circle cx="22" cy="96" r="3.2"/><circle cx="8" cy="60" r="4"/><circle cx="24" cy="23" r="3.2"/></g>
+        <g fill="var(--cheese)"><circle cx="46" cy="46" r="8"/><circle cx="74" cy="52" r="7"/><circle cx="55" cy="74" r="8"/><circle cx="80" cy="76" r="5"/></g>
+        <g fill="var(--basil)"><ellipse cx="66" cy="42" rx="3.6" ry="6" transform="rotate(20 66 42)"/><ellipse cx="44" cy="58" rx="3.2" ry="5.4" transform="rotate(-25 44 58)"/><ellipse cx="70" cy="66" rx="3.2" ry="5.4" transform="rotate(40 70 66)"/></g>
+      </svg>
+      <h1>Margherita Papers</h1>
+      <div class="tag">Konrad &amp; Natalia review pizza</div>
+      <div class="tricolore"></div>
+    </header>
+
+    <article>
+      <div class="kick">Naples · No. 1</div>
+      <h2 class="ptitle">Da Michele</h2>
+      <div class="pby">Konrad &amp; Natalia · March 2026</div>
+
+      <figure>
+        <svg class="plate" viewBox="0 0 120 120" role="img" aria-label="the margherita">
+          <circle cx="60" cy="60" r="56" fill="var(--crust)"/><circle cx="60" cy="60" r="45" fill="var(--sauce)"/>
+          <g fill="var(--char)"><circle cx="60" cy="8" r="4"/><circle cx="95" cy="22" r="3.4"/><circle cx="112" cy="58" r="4"/><circle cx="95" cy="96" r="3.2"/><circle cx="58" cy="112" r="4"/><circle cx="22" cy="96" r="3.4"/><circle cx="8" cy="60" r="4"/><circle cx="24" cy="23" r="3.4"/></g>
+          <g fill="var(--cheese)"><circle cx="45" cy="45" r="9"/><circle cx="74" cy="52" r="8"/><circle cx="55" cy="74" r="9"/><circle cx="80" cy="78" r="6"/><circle cx="40" cy="66" r="6"/></g>
+          <g fill="var(--basil)"><ellipse cx="66" cy="40" rx="4" ry="6.5" transform="rotate(20 66 40)"/><ellipse cx="42" cy="56" rx="3.6" ry="6" transform="rotate(-25 42 56)"/><ellipse cx="70" cy="66" rx="3.6" ry="6" transform="rotate(40 70 66)"/></g>
+        </svg>
+        <figcaption>The margherita, folded, on paper. [ your photo here ]</figcaption>
+      </figure>
+
+      <p class="body lede">We queued for fifty minutes in a rain that never quite decided to fall. Natalia had formed opinions about the queue long before we reached the door — about the couple ahead of us splitting one margherita "to stay light," about the man photographing his pizza from a chair he'd dragged into the street. By the time we sat down we were starving, and starving is the best sauce, which complicates the reviewing.</p>
+
+      <section class="menu">
+        <h2>La Scheda</h2>
+        <div class="item"><span class="lab">Style</span><span class="dots"></span><span class="val">Neapolitan</span></div>
+        <div class="item"><span class="lab">Base</span><span class="dots"></span><span class="val">tasty, dense not heavy, very crispy, proper level</span></div>
+        <div class="item"><span class="lab">Crown</span><span class="dots"></span><span class="val">appropriate Neapolitan</span></div>
+        <div class="item"><span class="lab">Cheese</span><span class="dots"></span><span class="val">good, creamy, well-distributed</span></div>
+        <div class="item"><span class="lab">Tomatoes</span><span class="dots"></span><span class="val">pungent, sweet and umami</span></div>
+        <div class="item"><span class="lab">Olive oil</span><span class="dots"></span><span class="val">tasted like nothing</span></div>
+        <div class="item"><span class="lab">Leoparding &amp; char</span><span class="dots"></span><span class="val">shy; more spot than smoke</span></div>
+        <div class="item"><span class="lab">Alveolation</span><span class="dots"></span><span class="val">open, uneven, the good way</span></div>
+        <div class="item"><span class="lab">Beauty</span><span class="dots"></span><span class="val">normal</span></div>
+      </section>
+
+      <p class="body">It came fast, folded, on a paper plate, and it was very good in the plain, unbothered way the great ones are. The base did all the work. The oil did nothing at all — we kept adding it, hoping, the way you do. We ate quickly, said little, and walked out into the same undecided rain, already arguing gently about where it ranked.</p>
+
+      <div class="end">• • •</div>
+      <div class="next"><a href="#">No. 2 — a Tuesday in Warsaw →</a></div>
+    </article>
+  </div>
+</body>
+</html>

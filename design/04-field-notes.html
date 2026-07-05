@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Margherita Papers — Field Notes</title>
+<style>
+  :root{
+    --bg:#fcfaf5; --ink:#282420; --muted:#8a8072; --accent:#b0603c; --line:#e8e1d4; --card:#f3ede1;
+    --crust:#e6b45f; --sauce:#c0402f; --cheese:#f4ead2; --char:#6a3b23; --basil:#4a6b41;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#161310; --ink:#e7ded0; --muted:#9d9384; --accent:#d68a63; --line:#332d24; --card:#201c16; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.68;}
+  .serif{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+  .bar{max-width:52rem;margin:0 auto;padding:1.2rem 1.3rem;display:flex;justify-content:space-between;align-items:center}
+  .bar .name{font-family:"Iowan Old Style",Palatino,Georgia,serif;font-weight:700;font-size:1.15rem;letter-spacing:.01em}
+  .bar nav a{color:var(--muted);text-decoration:none;margin-left:1.1rem;font-size:.9rem}
+  /* Hero */
+  .hero{position:relative;max-width:60rem;margin:0 auto;aspect-ratio:16/9;overflow:hidden;
+    background:radial-gradient(120% 130% at 30% 20%,#e9c07a,#c9552f 55%,#8f3320);display:flex;align-items:flex-end}
+  .hero svg{position:absolute;right:-3%;top:50%;transform:translateY(-50%);width:min(30rem,55%);opacity:.92;
+    filter:drop-shadow(0 10px 24px rgba(50,20,10,.35))}
+  .hero .cap{position:relative;z-index:2;color:#fff;padding:1.6rem 1.5rem;
+    background:linear-gradient(0deg,rgba(30,12,6,.6),transparent);width:100%}
+  .hero .place{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;opacity:.9}
+  .hero h1{font-family:"Iowan Old Style",Palatino,Georgia,serif;font-size:clamp(2.2rem,7vw,3.6rem);
+    line-height:1;margin:.3rem 0 .1rem;font-weight:700;text-shadow:0 2px 12px rgba(0,0,0,.3)}
+  .hero .by{font-size:.95rem;opacity:.92}
+  /* Body */
+  article{max-width:38rem;margin:0 auto;padding:2.4rem 1.3rem 4rem}
+  article p{font-size:1.08rem;margin:0 0 1.2rem}
+  article .serif.lede{font-size:1.16rem}
+  .aside{float:right;width:15rem;margin:.3rem 0 1.2rem 1.6rem;background:var(--card);border:1px solid var(--line);
+    border-radius:10px;padding:1.1rem 1.2rem}
+  .aside h2{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 .7rem}
+  .aside dl{margin:0;font-size:.9rem}
+  .aside dt{font-weight:600;margin-top:.55rem}
+  .aside dd{margin:0;color:var(--muted)}
+  .aside dt:first-child{margin-top:0}
+  figure{margin:2rem 0}
+  .ph2{aspect-ratio:4/3;border-radius:10px;background:
+    radial-gradient(90% 120% at 70% 20%,#d9c7a6,#b39a72 60%,#7c6a4c);display:flex;align-items:center;justify-content:center}
+  .ph2 span{color:#fff8;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase}
+  figcaption{color:var(--muted);font-size:.9rem;margin-top:.6rem;font-style:italic}
+  @media(max-width:34rem){.aside{float:none;width:auto;margin:1.4rem 0}}
+</style>
+</head>
+<body>
+  <div class="bar">
+    <span class="name">Margherita Papers</span>
+    <nav><a href="#">Reviews</a><a href="#">About</a></nav>
+  </div>
+
+  <div class="hero">
+    <svg viewBox="0 0 120 120" role="img" aria-label="A margherita pizza">
+      <circle cx="60" cy="60" r="56" fill="var(--crust)"/><circle cx="60" cy="60" r="45" fill="var(--sauce)"/>
+      <g fill="var(--char)"><circle cx="60" cy="8" r="4"/><circle cx="95" cy="22" r="3.4"/><circle cx="112" cy="58" r="4"/><circle cx="95" cy="96" r="3.2"/><circle cx="58" cy="112" r="4"/><circle cx="22" cy="96" r="3.4"/><circle cx="8" cy="60" r="4"/><circle cx="24" cy="23" r="3.4"/></g>
+      <g fill="var(--cheese)"><circle cx="45" cy="45" r="9"/><circle cx="74" cy="52" r="8"/><circle cx="55" cy="74" r="9"/><circle cx="80" cy="78" r="6"/><circle cx="40" cy="66" r="6"/></g>
+      <g fill="var(--basil)"><ellipse cx="66" cy="40" rx="4" ry="6.5" transform="rotate(20 66 40)"/><ellipse cx="42" cy="56" rx="3.6" ry="6" transform="rotate(-25 42 56)"/><ellipse cx="70" cy="66" rx="3.6" ry="6" transform="rotate(40 70 66)"/></g>
+    </svg>
+    <div class="cap">
+      <div class="place">Naples, Italy · No. 1</div>
+      <h1>Da Michele</h1>
+      <div class="by">Konrad &amp; Natalia · March 2026</div>
+    </div>
+  </div>
+
+  <article>
+    <aside class="aside">
+      <h2>The Card</h2>
+      <dl>
+        <dt>Style</dt><dd>Neapolitan</dd>
+        <dt>Base</dt><dd>tasty, dense not heavy, very crispy, proper level</dd>
+        <dt>Crown</dt><dd>appropriate Neapolitan</dd>
+        <dt>Cheese</dt><dd>good, creamy, well-distributed</dd>
+        <dt>Tomatoes</dt><dd>pungent, sweet and umami</dd>
+        <dt>Olive oil</dt><dd>tasted like nothing</dd>
+        <dt>Leoparding &amp; char</dt><dd>shy; more spot than smoke</dd>
+        <dt>Alveolation</dt><dd>open, uneven, the good way</dd>
+        <dt>Beauty</dt><dd>normal</dd>
+      </dl>
+    </aside>
+
+    <p class="serif lede">We queued for fifty minutes in a rain that never quite decided to fall. Natalia had formed opinions about the queue long before we reached the door — about the couple ahead of us splitting one margherita "to stay light," about the man photographing his pizza from a chair he'd dragged into the street.</p>
+    <p>By the time we sat down at a shared marble table we were starving, and starving is the best sauce, which rather complicates the reviewing.</p>
+
+    <figure>
+      <div class="ph2"><span>[ photo — the queue, 8&nbsp;pm ]</span></div>
+      <figcaption>The queue Natalia reviewed before the pizza.</figcaption>
+    </figure>
+
+    <p>It came fast, folded, on a paper plate, and it was very good in the plain, unbothered way the great ones are. The base did all the work. The oil did nothing at all — we kept adding it, hoping, the way you do. We ate quickly, said little, and walked out into the same undecided rain, already arguing gently about where it ranked.</p>
+  </article>
+</body>
+</html>
