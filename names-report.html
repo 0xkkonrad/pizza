@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pizza — name proposals</title>
+<style>
+  :root {
+    --bg: #fff;
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --line: #e6e2da;
+    --card: #faf8f4;
+    --free-bg: #e8f3e8; --free-ink: #1e6b30;
+    --taken-bg: #f9e8e6; --taken-ink: #a13328;
+    --unk-bg: #eee; --unk-ink: #777;
+    --accent: #b3402a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #191817; --ink: #e8e6e3; --muted: #9a968f; --line: #33312e;
+      --card: #201f1d;
+      --free-bg: #1d3322; --free-ink: #8fce9b;
+      --taken-bg: #3a221f; --taken-ink: #e09a91;
+      --unk-bg: #2a2927; --unk-ink: #999;
+      --accent: #e07a5f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; font-size: .95rem; }
+  h2 { font-size: 1.15rem; margin: 3rem 0 1rem; border-bottom: 1px solid var(--line); padding-bottom: .4rem; }
+  .badge {
+    display: inline-block; font-size: .72rem; font-weight: 600; letter-spacing: .02em;
+    padding: .1rem .5rem; border-radius: 99px; vertical-align: 2px; white-space: nowrap;
+  }
+  .free  { background: var(--free-bg);  color: var(--free-ink); }
+  .taken { background: var(--taken-bg); color: var(--taken-ink); }
+  .unk   { background: var(--unk-bg);   color: var(--unk-ink); }
+
+  /* shortlist cards */
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 1.4rem 1.5rem 1.2rem; margin: 0 0 1rem;
+  }
+  .card .rank { color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; }
+  .masthead {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem; line-height: 1.15; margin: .2rem 0 .1rem; font-weight: 700;
+  }
+  .domain { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .88rem; color: var(--muted); }
+  .case { margin: .7rem 0 0; }
+  .fine { margin: .5rem 0 0; color: var(--muted); font-size: .88rem; }
+
+  table { border-collapse: collapse; width: 100%; margin: .8rem 0 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .45rem .6rem .45rem 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600; }
+  td.name { font-weight: 600; white-space: nowrap; }
+  td.dom { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .85rem; white-space: nowrap; }
+  .tablewrap { overflow-x: auto; }
+
+  .avoid { border-left: 3px solid var(--accent); padding: .2rem 0 .2rem 1rem; margin: 1rem 0; }
+  .avoid p { margin: .35rem 0; }
+  .rec {
+    border: 1px solid var(--line); border-radius: 10px; padding: 1.2rem 1.5rem; margin-top: 1rem;
+    background: var(--card);
+  }
+  .rec ol { margin: .5rem 0 0; padding-left: 1.2rem; }
+  footer { margin-top: 4rem; color: var(--muted); font-size: .88rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+  a { color: inherit; }
+  .note { color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>🍕 name proposals</h1>
+  <p class="sub">Konrad &amp; Natalia pick one · domains RDAP-checked &amp; names collision-swept 2026-07-05 ·
+  <span class="badge free">free</span> = unregistered (may still be premium-priced) · <span class="badge taken">taken</span> · <span class="badge unk">unchecked</span></p>
+
+  <h2>The shortlist</h2>
+
+  <div class="card">
+    <div class="rank">№ 1 — recommended</div>
+    <div class="masthead">We Ate Pizza</div>
+    <div class="domain">weatepizza.com <span class="badge free">free</span></div>
+    <p class="case">Memoir is past tense. Earnest, funny, zero pretension — says <em>couple</em> and <em>diary</em> in three words, and the "We Rate Dogs" echo stays a wink instead of a promise.</p>
+    <p class="fine">Exact name verified free. Neighbors to know about: weeatpizza.com (parked "launching soon"), "We, The Pizza" (DC pizzeria chain), "Eat The Pizza" (YouTube show).</p>
+  </div>
+
+  <div class="card">
+    <div class="rank">№ 2</div>
+    <div class="masthead">Crown &amp; Char</div>
+    <div class="domain">crownandchar.com <span class="badge free">free</span></div>
+    <p class="case">Lifted straight from our own review vocabulary, alliterative, and it looks beautiful in a minimal masthead.</p>
+    <p class="fine">The cleanest name checked: nothing named this anywhere, in any field.</p>
+  </div>
+
+  <div class="card">
+    <div class="rank">№ 3 — the new candidate</div>
+    <div class="masthead">We Rate Pizza</div>
+    <div class="domain">weratepizza.com <span class="badge free">free</span> &nbsp;·&nbsp; rate.pizza <span class="badge free">free</span> &nbsp;·&nbsp; werate.pizza <span class="badge free">free</span></div>
+    <p class="case">Available across the board and no existing account or site found with the name. Two honest tensions: it's a straight instance of the "We Rate ___" meme family (We Rate Dogs and its parody swarm), so it reads internet-joke rather than memoir — and <strong>"rate" promises a score, which the format deliberately never gives</strong> (descriptive fields only, "Beauty" as the lone holistic axis). We <em>Ate</em> Pizza keeps the same joke hidden inside a true sentence. If the joke-forward direction wins anyway, <span class="domain">rate.pizza</span> is a killer URL.</p>
+  </div>
+
+  <div class="card">
+    <div class="rank">№ 4</div>
+    <div class="masthead">Alveolation</div>
+    <div class="domain">alveolation.com <span class="badge free">free</span></div>
+    <p class="case">One word, deeply nerdy, reads like a zine title — and it's in our template. Verified free everywhere.</p>
+    <p class="fine">Trade-off: it's subculture vocabulary (It.&nbsp;<em>alveolatura</em>), so harder to search-own than a coined phrase; outsiders will need the joke explained. That may be a feature.</p>
+  </div>
+
+  <div class="card">
+    <div class="rank">№ 5</div>
+    <div class="masthead">Beauty: Normal</div>
+    <div class="domain">beautynormal.com <span class="badge free">free</span></div>
+    <p class="case">Deadpan, straight from the template's funniest line. Very memoir. Confusing out of context — which is sort of the point.</p>
+  </div>
+
+  <div class="card">
+    <div class="rank">№ 6 — wildcard</div>
+    <div class="masthead">normal.pizza</div>
+    <div class="domain">normal.pizza <span class="badge free">free</span> <span class="note">(dictionary word on .pizza — check for premium pricing)</span></div>
+    <p class="case">The name <em>is</em> the URL. Minimal, absurd, unforgettable.</p>
+  </div>
+
+  <h2>Avoid — verified collisions</h2>
+  <div class="avoid">
+    <p><strong>Pizza Diary / Pizza Diaries</strong> — hard avoid: thepizzadiaries.com is an <em>active</em> exact-name pizza review blog, plus a London review IG and a YouTube channel.</p>
+    <p><strong>Pizza Journal</strong> — Scott Wiener's turf (his "Scott's Pizza Journal" Tumblr + the Pocket Pizza Journal notebook he hands every tour guest).</p>
+    <p><strong>Cornicione</strong> — pizzerias named this operate on three continents; .com parked for sale.</p>
+    <p><strong>Undercarriage</strong> — Portnoy's signature move, and undercarriage.pizza is already squatted.</p>
+  </div>
+
+  <h2>Full list</h2>
+
+  <h3>From our own vocabulary</h3>
+  <div class="tablewrap"><table>
+    <tr><th>Name</th><th>Domain</th><th>Status</th><th>Notes</th></tr>
+    <tr><td class="name">Crown &amp; Char</td><td class="dom">crownandchar.com</td><td><span class="badge free">free</span></td><td>cleanest option checked</td></tr>
+    <tr><td class="name">Char &amp; Crumb</td><td class="dom">charandcrumb.com</td><td><span class="badge free">free</span></td><td></td></tr>
+    <tr><td class="name">Alveolation</td><td class="dom">alveolation.com</td><td><span class="badge free">free</span></td><td>clean everywhere</td></tr>
+    <tr><td class="name">Beauty: Normal</td><td class="dom">beautynormal.com</td><td><span class="badge free">free</span></td><td></td></tr>
+    <tr><td class="name">Cornicione</td><td class="dom">cornicione.com</td><td><span class="badge taken">taken</span></td><td>+ pizzerias worldwide</td></tr>
+    <tr><td class="name">Leoparding</td><td class="dom">leoparding.com</td><td><span class="badge taken">taken</span></td><td>parked; Leopard Crust (76K IG) owns the space</td></tr>
+    <tr><td class="name">Proper Level</td><td class="dom">properlevel.com</td><td><span class="badge taken">taken</span></td><td></td></tr>
+    <tr><td class="name">The Undercarriage</td><td class="dom">undercarriage.pizza</td><td><span class="badge taken">taken</span></td><td>squatted — someone had the same idea</td></tr>
+  </table></div>
+
+  <h3>Memoir / diary</h3>
+  <div class="tablewrap"><table>
+    <tr><th>Name</th><th>Domain</th><th>Status</th><th>Notes</th></tr>
+    <tr><td class="name">We Ate Pizza</td><td class="dom">weatepizza.com</td><td><span class="badge free">free</span></td><td>nearly clean; see shortlist</td></tr>
+    <tr><td class="name">We Rate Pizza</td><td class="dom">weratepizza.com</td><td><span class="badge free">free</span></td><td>also rate.pizza + werate.pizza free; meme-family + promises scores</td></tr>
+    <tr><td class="name">Margherita Papers</td><td class="dom">margheritapapers.com</td><td><span class="badge free">free</span></td><td></td></tr>
+    <tr><td class="name">San Marzano Diaries</td><td class="dom">sanmarzanodiaries.com</td><td><span class="badge free">free</span></td><td></td></tr>
+    <tr><td class="name">Slice Notes</td><td class="dom">slicenotes.com</td><td><span class="badge free">free</span></td><td>name verified clean</td></tr>
+    <tr><td class="name">The Pizza Diary</td><td class="dom">diary.pizza</td><td><span class="badge taken">name</span></td><td>domain free but thepizzadiaries.com is an active blog — avoid</td></tr>
+    <tr><td class="name">The Margherita Log</td><td class="dom">—</td><td><span class="badge unk">unchecked</span></td><td></td></tr>
+    <tr><td class="name">Pizza, Reviewed</td><td class="dom">—</td><td><span class="badge unk">unchecked</span></td><td></td></tr>
+    <tr><td class="name">One More Slice</td><td class="dom">—</td><td><span class="badge unk">unchecked</span></td><td></td></tr>
+    <tr><td class="name">Dough Notes</td><td class="dom">doughnotes.com</td><td><span class="badge taken">taken</span></td><td>a fintech owns it; pun spent by donut brands</td></tr>
+  </table></div>
+
+  <h3>For two</h3>
+  <div class="tablewrap"><table>
+    <tr><th>Name</th><th>Domain</th><th>Status</th><th>Notes</th></tr>
+    <tr><td class="name">Pizza a Due</td><td class="dom">pizzaadue.com</td><td><span class="badge free">free</span></td><td>double-a slightly awkward</td></tr>
+    <tr><td class="name">K &amp; N</td><td class="dom">kn.pizza</td><td><span class="badge free">free</span></td><td>2-letter — likely premium</td></tr>
+    <tr><td class="name">Nasza Pizza</td><td class="dom">—</td><td><span class="badge unk">unchecked</span></td><td>reads a bit like a pizzeria</td></tr>
+    <tr><td class="name">Two Slices</td><td class="dom">twoslices.com</td><td><span class="badge taken">taken</span></td><td>name free-ish in pizza media, but generic</td></tr>
+  </table></div>
+
+  <h3>Dough nerd</h3>
+  <div class="tablewrap"><table>
+    <tr><th>Name</th><th>Domain</th><th>Status</th><th>Notes</th></tr>
+    <tr><td class="name">Overnight Proof</td><td class="dom">—</td><td><span class="badge unk">unchecked</span></td><td>the dough rests overnight; so do the drafts</td></tr>
+    <tr><td class="name">Cold Ferment</td><td class="dom">—</td><td><span class="badge unk">unchecked</span></td><td></td></tr>
+    <tr><td class="name">The Slow Rise</td><td class="dom">—</td><td><span class="badge unk">unchecked</span></td><td></td></tr>
+    <tr><td class="name">Ninety Seconds</td><td class="dom">ninetyseconds.com</td><td><span class="badge taken">taken</span></td><td>Neapolitan bake time</td></tr>
+    <tr><td class="name">Doppio Zero</td><td class="dom">doppiozero.com</td><td><span class="badge taken">taken</span></td><td>Italian culture magazine</td></tr>
+  </table></div>
+
+  <h3>.pizza domain hacks</h3>
+  <div class="tablewrap"><table>
+    <tr><th>Domain</th><th>Status</th><th>Notes</th></tr>
+    <tr><td class="dom">normal.pizza</td><td><span class="badge free">free</span></td><td>the wildcard</td></tr>
+    <tr><td class="dom">rate.pizza</td><td><span class="badge free">free</span></td><td>if the joke-forward name wins</td></tr>
+    <tr><td class="dom">werate.pizza</td><td><span class="badge free">free</span></td><td></td></tr>
+    <tr><td class="dom">diary.pizza</td><td><span class="badge free">free</span></td><td>but the name collides — avoid</td></tr>
+    <tr><td class="dom">kn.pizza</td><td><span class="badge free">free</span></td><td>likely premium</td></tr>
+    <tr><td class="dom">two.pizza · we.pizza · ate.pizza · notes.pizza · review.pizza · undercarriage.pizza</td><td><span class="badge taken">taken</span></td><td>review.pizza = "Pizza Review Joe"</td></tr>
+  </table></div>
+
+  <h3>Pun graveyard</h3>
+  <p class="note">Crust Fund · In Crust We Trust · Slice Slice Baby · Cheesus Crust — heavily used across the internet; not memoir, not us.</p>
+
+  <h2>Recommendation</h2>
+  <div class="rec">
+    <p>The research says the win condition is <strong>memoir + fixed spec-sheet, no scores</strong> — so the name should promise a diary, not a rating.</p>
+    <ol>
+      <li><strong>We Ate Pizza</strong> — the truest to what this is; the We-Rate wink for free.</li>
+      <li><strong>Crown &amp; Char</strong> — the cleanest and the prettiest masthead; insiders nod at the vocabulary.</li>
+      <li><strong>We Rate Pizza</strong> — funniest at first sight, but it promises the one thing the blog refuses to do.</li>
+    </ol>
+    <p class="note">Whichever wins: check the Instagram handle right before buying (accounts appear faster than sites), and check the actual price on .pizza dictionary words at Porkbun/Cloudflare — "free" can still mean premium-tier.</p>
+  </div>
+
+  <footer>
+    Sources &amp; detail: <a href="https://github.com/0xkkonrad/pizza/blob/main/names.md">names.md</a> ·
+    <a href="https://github.com/0xkkonrad/pizza/blob/main/research.md">research.md</a> ·
+    repo <a href="https://github.com/0xkkonrad/pizza">0xkkonrad/pizza</a>
+  </footer>
+</main>
+</body>
+</html>

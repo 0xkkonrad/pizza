@@ -30,6 +30,7 @@ Collision sweep (verified — details in [research.md](research.md) §4): **hard
 | Name | Domain | |
 |---|---|---|
 | We Ate Pizza | weatepizza.com | ✅ |
+| We Rate Pizza | weratepizza.com | ✅ (also rate.pizza + werate.pizza free; no existing account found) — "We Rate ___" meme family, and "rate" promises scores we don't give |
 | Margherita Papers | margheritapapers.com | ✅ |
 | San Marzano Diaries | sanmarzanodiaries.com | ✅ |
 | The Pizza Diary | diary.pizza | ❌ name — thepizzadiaries.com is an active review blog; avoid even though diary.pizza itself is free |
@@ -60,7 +61,7 @@ Collision sweep (verified — details in [research.md](research.md) §4): **hard
 
 ## .pizza domain hacks
 
-`diary.pizza` ✅ · `normal.pizza` ✅ · `kn.pizza` ✅ · two.pizza ❌ · we.pizza ❌ · ate.pizza ❌ · notes.pizza ❌ · undercarriage.pizza ❌
+`normal.pizza` ✅ · `rate.pizza` ✅ · `werate.pizza` ✅ · `diary.pizza` ✅ (domain free but the *name* collides — avoid) · `kn.pizza` ✅ · two.pizza ❌ · we.pizza ❌ · ate.pizza ❌ · notes.pizza ❌ · review.pizza ❌ ("Pizza Review Joe") · undercarriage.pizza ❌
 
 ## Pun graveyard (for completeness, not recommended)
 
