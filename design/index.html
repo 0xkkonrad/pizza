@@ -43,6 +43,12 @@
   .url{flex:1;text-align:center;font-size:.74rem;color:var(--muted);background:var(--panel);border:1px solid var(--line);
     border-radius:5px;padding:.15rem .5rem;max-width:20rem;margin:0 auto}
   iframe{width:100%;height:560px;border:0;display:block;background:#fff}
+  iframe.tall{height:760px}
+  .approach.chosen{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent)}
+  .pick{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    color:#fff;background:var(--accent);border-radius:99px;padding:.15rem .6rem;margin-left:.2rem;vertical-align:2px}
+  .setaside{opacity:.72}
+  .setaside h2::after{content:" · set aside";font-weight:400;font-size:.8rem;color:var(--muted);letter-spacing:0;text-transform:none}
 
   .rec{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:1.4rem 1.5rem;margin-top:2.4rem}
   .rec h2{margin:0 0 .6rem;font-size:1.2rem}
@@ -56,24 +62,39 @@
 <body>
 <div class="wrap">
   <header class="top">
-    <h1>🍕 <span class="name">Margherita Papers</span> — five ways it could look</h1>
-    <p>The name's decided, so this is about the skin. Below are five distinct directions, each rendered as a <b>real full page</b> showing the <b>same</b> first review — so you're judging the design, not the words.</p>
-    <span class="locked">Name locked · <b>MargheritaPapers.com</b></span>
+    <h1>🍕 <span class="name">Margherita Papers</span> — the direction</h1>
+    <p><b>Decided:</b> you liked <b>The Paper</b> — so I pushed it further into an actual newspaper broadsheet and locked it to light (no dark mode). That's <b>The Broadsheet</b>, featured first below. The original four are kept beneath it for reference.</p>
+    <span class="locked">Name locked · <b>MargheritaPapers.com</b> &nbsp;·&nbsp; Direction: <b>The Broadsheet</b></span>
   </header>
 
   <div class="how">
-    <b>How to read this:</b> each preview is the live mockup in a little browser frame — scroll inside it. Hit <b>Open full page ↗</b> to see it fill your screen, and try your OS dark mode: all five respond to it. Same sample review throughout (Da Michele, Naples), using your real tasting values. Pick one, mix two, or tell me what to push further. All five are buildable on the planned <b>hugo-bearblog</b> stack with custom CSS.
+    <b>How to read this:</b> each preview is the live mockup in a little browser frame — scroll inside it. Hit <b>Open full page ↗</b> to see it fill your screen. Same sample review throughout (Da Michele, Naples), using your real tasting values. The Broadsheet is buildable on the planned <b>hugo-bearblog</b> stack with custom CSS.
   </div>
 
+  <!-- CHOSEN: The Broadsheet -->
+  <section class="approach chosen">
+    <div class="head"><span class="num">★</span><h2>The Broadsheet</h2><span class="pick">Your pick, refined</span>
+      <span class="one">The Paper, pushed all the way to a real newspaper front page — masthead, ears, two columns, a Particulars factbox, a pull-quote. Light only.</span></div>
+    <div class="tags">
+      <span class="tag"><b>Feels like:</b> a proper broadsheet review section</span>
+      <span class="tag"><b>Now newspaper:</b> nameplate + folio, 2-col justified, drop cap, factbox, pull-quote</span>
+      <span class="tag"><b>Light-locked:</b> warm newsprint, no dark mode</span>
+      <span class="tag"><b>Weight:</b> tiny (system serif, zero JS)</span>
+    </div>
+    <a class="open" href="the-broadsheet.html" target="_blank" rel="noopener">Open full page ↗</a>
+    <div class="frame"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">margheritapapers.com</span></div>
+      <iframe class="tall" src="the-broadsheet.html" title="The Broadsheet" loading="lazy"></iframe></div>
+  </section>
+
+  <p style="margin:2.4rem 0 1rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:1.4rem">The four set-aside directions, kept for reference —</p>
+
   <!-- 1 -->
-  <section class="approach">
+  <section class="approach setaside">
     <div class="head"><span class="num">1</span><h2>The Paper</h2>
-      <span class="one">A little literary journal. Leans all the way into "Papers."</span></div>
+      <span class="one">The original literary-journal version, before the newspaper pass. (Has dark mode.)</span></div>
     <div class="tags">
       <span class="tag"><b>Feels like:</b> The Paris Review, for pizza</span>
-      <span class="tag"><b>Best for:</b> the memoir voice + the name</span>
-      <span class="tag"><b>Trade-off:</b> serif formality isn't for everyone</span>
-      <span class="tag"><b>Weight:</b> tiny (system serif)</span>
+      <span class="tag"><b>Relation:</b> the seed of The Broadsheet above</span>
     </div>
     <a class="open" href="01-the-paper.html" target="_blank" rel="noopener">Open full page ↗</a>
     <div class="frame"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">margheritapapers.com</span></div>
@@ -81,7 +102,7 @@
   </section>
 
   <!-- 2 -->
-  <section class="approach">
+  <section class="approach setaside">
     <div class="head"><span class="num">2</span><h2>Bear Bones</h2>
       <span class="one">Almost no design at all. The pure minimalist floor.</span></div>
     <div class="tags">
@@ -96,7 +117,7 @@
   </section>
 
   <!-- 3 -->
-  <section class="approach">
+  <section class="approach setaside">
     <div class="head"><span class="num">3</span><h2>Tasting Card</h2>
       <span class="one">The nine-field list <em>is</em> the design — a spec sheet you keep.</span></div>
     <div class="tags">
@@ -111,7 +132,7 @@
   </section>
 
   <!-- 4 -->
-  <section class="approach">
+  <section class="approach setaside">
     <div class="head"><span class="num">4</span><h2>Field Notes</h2>
       <span class="one">Photo-forward. The story leads; the list tucks into the margin.</span></div>
     <div class="tags">
@@ -126,7 +147,7 @@
   </section>
 
   <!-- 5 -->
-  <section class="approach">
+  <section class="approach setaside">
     <div class="head"><span class="num">5</span><h2>Trattoria</h2>
       <span class="one">Warm, Italian, a menu card. The most character and colour.</span></div>
     <div class="tags">
@@ -141,15 +162,14 @@
   </section>
 
   <div class="rec">
-    <h2>My read</h2>
-    <p>You asked for <b>very minimalistic + memoir + lightweight</b>, and the research says your edge is the structured list + a diary voice with no score. Ranking against exactly that:</p>
+    <h2>Where this leaves us</h2>
+    <p><b>The Broadsheet</b> is the direction. It keeps everything the research pointed to — memoir voice, the nine-field list as a proper factbox, feather-light and quiet — and now genuinely reads as a newspaper, on warm newsprint that never goes dark.</p>
+    <p>Two small calls I made that are easy to change — tell me your preference:</p>
     <ol>
-      <li><b>The Paper (1)</b> — my pick. It <em>is</em> the name, carries the memoir voice best, and stays feather-light (system serif, zero JS). Minimal in the "quiet and considered" sense, not the "bare" sense.</li>
-      <li><b>Tasting Card (3)</b> — the boldest bet. It makes your one genuinely novel move — the attribute list — the whole identity. Pick this if you want to look unlike anything else in pizza.</li>
-      <li><b>Bear Bones (2)</b> — the safe floor. If in doubt, start here; it's five minutes of setup and impossible to get wrong. Easy to graduate to The Paper later.</li>
+      <li><b>Headline style.</b> Right now the place name <em>is</em> the headline ("Da Michele") with a descriptive deck under it. The alternative is a real newspaper headline ("A Margherita That Lets the Base Do the Talking") with the place in the kicker. I went with place-as-headline so the archive stays scannable.</li>
+      <li><b>The numbering &amp; furniture.</b> I leaned into the bit — "Vol. I / No. 1," "Price · One Slice," "Continued on P. 2," the "▪" end mark. Dial it up (more front-page cosplay) or down (cleaner, just masthead + columns) to taste.</li>
     </ol>
-    <p><b>Field Notes (4)</b> and <b>Trattoria (5)</b> are the two "more" options — more photos, more character — there in case minimal isn't actually what you want once you see it.</p>
-    <p class="foot">A strong hybrid worth a word: <b>The Paper's</b> masthead + typography with <b>Tasting Card's</b> boxed spec block for the nine fields — literary frame, structured heart. Say the word and I'll mock that up as #6. Detail &amp; sources: <a class="inline" href="https://github.com/0xkkonrad/pizza/blob/main/research.md">research.md</a>.</p>
+    <p class="foot">Next: pick headline style, then I buy <b>MargheritaPapers.com</b>, scaffold Hugo with this as the theme, and we start pulling in your real reviews + photos. Detail &amp; sources: <a class="inline" href="https://github.com/0xkkonrad/pizza/blob/main/research.md">research.md</a>.</p>
   </div>
 </div>
 </body>
