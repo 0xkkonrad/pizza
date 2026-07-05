@@ -1,0 +1,7 @@
+<header class="masthead">
+  <a class="title" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+  <div class="tagline">{{ .Site.Params.tagline }}</div>
+  <nav>
+    {{ range .Site.Menus.main }}<a href="{{ .PageRef | relURL }}">{{ .Name }}</a>{{ end }}
+  </nav>
+</header>

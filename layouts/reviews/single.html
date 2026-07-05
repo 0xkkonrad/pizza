@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  <div class="post-meta meta">
+    {{- with .Params.number }}No. {{ . }} · {{ end -}}
+    {{- with .Params.place }}{{ . }} · {{ end -}}
+    {{ .Date.Format "2 January 2006" }} · {{ .Site.Params.author }}
+  </div>
+
+  {{ partial "review-list.html" . }}
+
+  <div class="prose">
+    {{ .Content }}
+  </div>
+
+  <nav class="postnav">
+    <span>{{ with .NextInSection }}<a href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}</span>
+    <span>{{ with .PrevInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}</span>
+  </nav>
+</article>
+{{ end }}

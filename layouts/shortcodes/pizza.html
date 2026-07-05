@@ -1,0 +1,15 @@
+{{- /* Placeholder figure standing in for a real photo. Real photos: drop a
+       JPG in the review's folder and use ![caption](photo.jpg) — the image
+       render hook resizes it to WebP automatically. */ -}}
+<figure class="pizza-fig">
+  <div class="frame">
+    <svg viewBox="0 0 120 120" role="img" aria-label="A margherita pizza">
+      <circle cx="60" cy="60" r="56" fill="#e3b25e"/>
+      <circle cx="60" cy="60" r="45" fill="#bd3f2f"/>
+      <g fill="#5f3420"><circle cx="60" cy="8" r="4"/><circle cx="95" cy="22" r="3.4"/><circle cx="112" cy="58" r="4"/><circle cx="95" cy="96" r="3.2"/><circle cx="58" cy="112" r="4"/><circle cx="22" cy="96" r="3.4"/><circle cx="8" cy="60" r="4"/><circle cx="24" cy="23" r="3.4"/></g>
+      <g fill="#f4ead2"><circle cx="45" cy="45" r="9"/><circle cx="74" cy="52" r="8"/><circle cx="55" cy="74" r="9"/><circle cx="80" cy="78" r="6"/><circle cx="40" cy="66" r="6"/></g>
+      <g fill="#4a6b41"><ellipse cx="66" cy="40" rx="4" ry="6.5" transform="rotate(20 66 40)"/><ellipse cx="42" cy="56" rx="3.6" ry="6" transform="rotate(-25 42 56)"/><ellipse cx="70" cy="66" rx="3.6" ry="6" transform="rotate(40 70 66)"/></g>
+    </svg>
+  </div>
+  {{- with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end -}}
+</figure>

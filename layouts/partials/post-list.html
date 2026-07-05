@@ -1,0 +1,13 @@
+<ul class="posts">
+  {{- range . }}
+  <li>
+    <a class="t" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <div class="meta">
+      {{- with .Params.number }}No. {{ . }} · {{ end -}}
+      {{- with .Params.place }}{{ . }} · {{ end -}}
+      {{ .Date.Format "January 2006" }}
+    </div>
+    <p class="sum">{{ .Summary | plainify | truncate 150 }}</p>
+  </li>
+  {{- end }}
+</ul>

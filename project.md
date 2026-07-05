@@ -42,18 +42,19 @@ Example (a real one):
 
 1. [x] Research the landscape of existing pizza-review sites → [research.md](research.md)
 2. [x] Choose a name from a large set of proposals → [names.md](names.md) — **chosen: Margherita Papers** (MargheritaPapers.com)
-3. [ ] Choose a design direction → [design/](design/) — five mockups presented, Konrad & Natalia pick
+3. [x] Choose a design direction → [design/](design/) — **chosen: The Broadsheet, then simplified** (one serif + one sans, h1/h2/text, light-only newsprint). Built as a custom Hugo theme.
 
 ### Phase 2 — Build the whole website
 
-1. [ ] Scaffold Hugo + minimal theme, GitHub Pages deploy
-2. [ ] Pull all the old reviews from Konrad, including photos
+1. [x] Scaffold Hugo + minimal theme, GitHub Pages deploy — done (custom theme in [layouts/](layouts/), sample content, deploy workflow ready in [.github/workflows/hugo.yml](.github/workflows/hugo.yml)). See [README.md](README.md).
+2. [ ] Pull all the old reviews from Konrad, including photos ← **next**
 3. [ ] Write 1–2 posts → Konrad has a look, requests changes
 4. [ ] Write the rest
 
 ### Ship
 
-- [ ] Buy domain (blocked on the name)
+- [ ] Buy domain: **MargheritaPapers.com**
+- [ ] Enable GitHub Pages (Settings → Pages → GitHub Actions) + uncomment `push:` trigger
 - [ ] Publish
 
 ## Stack (planned)

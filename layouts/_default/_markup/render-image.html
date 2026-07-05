@@ -1,0 +1,15 @@
+{{- $img := .Page.Resources.GetMatch .Destination -}}
+{{- if $img -}}
+  {{- $out := $img -}}
+  {{- if gt $img.Width 1400 -}}
+    {{- $out = $img.Resize "1400x webp q82" -}}
+  {{- else -}}
+    {{- $out = $img.Resize (printf "%dx webp q82" $img.Width) -}}
+  {{- end -}}
+  <figure>
+    <img src="{{ $out.RelPermalink }}" width="{{ $out.Width }}" height="{{ $out.Height }}" alt="{{ .Text }}" loading="lazy" decoding="async">
+    {{- with .Title }}<figcaption>{{ . }}</figcaption>{{ end -}}
+  </figure>
+{{- else -}}
+  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" loading="lazy">
+{{- end -}}
