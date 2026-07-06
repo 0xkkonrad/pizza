@@ -2,6 +2,8 @@
 
 Konrad & Natalia review pizza. A small, slow, memoir-style Hugo site — no scores, ever.
 
+> **Status (2026-07-05):** site fully built and working with **two placeholder reviews**; design locked; **not deployed yet**. Full status + the exact next steps to resume are in **[project.md](project.md)** — start there.
+
 - **Design:** planning + mockups in [design/](design/); the built site is a tiny custom theme in [layouts/](layouts/) (one serif + one sans, warm newsprint, light only).
 - **Planning docs:** [project.md](project.md) · [research.md](research.md) · [names.md](names.md)
 
